@@ -1,2 +1,64 @@
   [1m[35m (2063.1ms)[0m  [1m[35mCREATE DATABASE "route_project_development" ENCODING = 'unicode'[0m
   [1m[35m (317.0ms)[0m  [1m[35mCREATE DATABASE "route_project_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2023-11-22 14:39:13 -0500
+
+ActiveRecord::NoDatabaseError - We could not find your database: route_project_development. Available database configurations can be found in config/database.yml file.
+To resolve this error:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+Started POST "/__better_errors/caf16fd6302c8461/variables" for 127.0.0.1 at 2023-11-22 14:39:13 -0500
+  [1m[35m (154.2ms)[0m  [1m[35mCREATE DATABASE "route_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (121.9ms)[0m  [1m[35mCREATE DATABASE "route_project_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2023-11-22 14:39:51 -0500
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ishanchawla/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ishanchawla/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 344)
+Completed 200 OK in 35ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 5457)
+
+
+Started GET "/users" for ::1 at 2023-11-22 14:40:44 -0500
+
+Errno::ENOENT - No such file or directory -:
+  app/controllers/users_controller.rb:6:in `<top (required)>'
+
+Started GET "/users" for ::1 at 2023-11-22 14:41:10 -0500
+
+Errno::ENOENT - No such file or directory -:
+  app/controllers/users_controller.rb:6:in `<top (required)>'
+
+Started GET "/User" for 127.0.0.1 at 2023-11-22 14:41:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/User"):
+  
+Started GET "/Users" for 127.0.0.1 at 2023-11-22 14:41:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/Users"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-11-22 14:41:49 -0500
+
+Errno::ENOENT - No such file or directory -:
+  app/controllers/users_controller.rb:6:in `<top (required)>'
+
+Started POST "/__better_errors/1e696c4b78341edf/variables" for 127.0.0.1 at 2023-11-22 14:41:49 -0500
+Started GET "/users" for 127.0.0.1 at 2023-11-22 14:42:59 -0500
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 776)
+
+
+
+ActionController::MissingExactTemplate - UsersController#index is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/b5a4748e197a74a5/variables" for 127.0.0.1 at 2023-11-22 14:43:00 -0500
+Started GET "/users" for 127.0.0.1 at 2023-11-22 14:43:24 -0500
+Processing by UsersController#index as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 490)
+
+
