@@ -62,3 +62,41 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 490)
 
 
+Started GET "/users?fav_food=pizza" for 127.0.0.1 at 2023-11-22 14:44:26 -0500
+Processing by UsersController#index as HTML
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 125)
+
+
+Started POST "/users" for ::1 at 2023-11-22 14:45:22 -0500
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+
+Started POST "/users" for ::1 at 2023-11-22 14:46:02 -0500
+Processing by UsersController#create as */*
+  Parameters: {"somethign"=>"somethign_else"}
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started POST "/users/5" for ::1 at 2023-11-22 14:46:19 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/5"):
+  
+Started GET "/users/5" for ::1 at 2023-11-22 14:46:36 -0500
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users/5" for ::1 at 2023-11-22 14:47:06 -0500
+Processing by UsersController#show as */*
+  Parameters: {"somethign"=>"somethign_else", "id"=>"5"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 109)
+
+
+Started GET "/users/5" for ::1 at 2023-11-22 14:48:40 -0500
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>{"a_key"=>"[FILTERED]", "another_key"=>"[FILTERED]", "nested"=>{"key"=>"value"}}, "another"=>"ahhhhhhhh", "id"=>"5"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 72)
+
+
